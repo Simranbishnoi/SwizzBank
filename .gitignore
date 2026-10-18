@@ -18,3 +18,14 @@ out/
 # OS files
 .DS_Store
 Thumbs.db
+# Java / Maven
+target/
+out/
+
+# Python
+__pycache__/
+*.py[cod]
+backend/.venv/
+
+# Environment secrets
+backend/.env
