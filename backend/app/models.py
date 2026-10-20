@@ -29,7 +29,7 @@ class Account(Base):
         server_default=func.now()
     )
 class Transaction(Base):
-    __tablename__="transaction"
+    __tablename__="transactions"
     transaction_id:Mapped[int]=mapped_column(
         primary_key=True
     )
