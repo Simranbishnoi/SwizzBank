@@ -111,11 +111,7 @@ def create_account(account_number, holder_name, opening_balance):
 
     except IntegrityError:
         db.rollback()
-        print(
-            "Account could not be created. "
-            "The account number may already exist, "
-            "or a database constraint was violated."
-        )
+        raise
 
     except Exception:
         db.rollback()
